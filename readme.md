@@ -1,1 +1,1 @@
-Did you mean the [live webpage](ClangClangBattarang.github.io) instead?
+Did you mean the [live webpage](clangclangbattarang.github.io) instead?
