@@ -1,11 +1,93 @@
+* {
+    font-family: sans-serif;
+}
+
 body {
-    background-color: darkslategrey;
+    background-color: darkslategray;
 }
 
 h1{
     color: darkorange;
 }
 
+h2{
+    color: lightyellow;
+}
+
 p{
+    color: floralwhite;
+}
+
+footer{
+    color: lightgray;
+    text-align: center;
+    font-size: small;
+}
+
+#navbar-horizontal{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-top: 0px;
+}
+
+.navbar-text {
+    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+}
+
+.navbar-text ul{
+    list-style-type: none; /* Remove dot points */
+}
+
+.navbar-text li{
+    display: inline-block; /* This is what makes the list's line of text space all it's contents into one line */
+    /* padding-inline: 3px; */
+
+    border: 1px;
+    border-style: inset;
+    border-color: white;
+
+    font-size: xx-large;
+    text-align: center;
+
+    background-color: gray; /* Opacity cannot be controlled this way */
+    
+    /*
+    border: 1px;
+    border-style: solid;
+    border-color: white;
+    */
+}
+
+.navbar-text a{
+    text-decoration: none; /* Removes hyperlink underline */
+    color: lightgrey;
+}
+
+/* Indicates the current page to users; this class must be manually set*/
+.navbar-text a.active{
+    color: lightblue;
+    background-color: cadetblue;
+}
+
+.navbar-text a:hover{
+    color: whitesmoke;
+    background-color: darkgrey;
+}
+
+/* Default navbar highlight state */
+li a:hover:not(.active){
     color: white;
+    background-color: royalblue;
+}
+
+.navbar-text a:visited{
+    /* color: lightgrey; */
 }
