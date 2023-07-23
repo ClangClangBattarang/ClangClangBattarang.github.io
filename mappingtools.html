@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <head>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Mapping Tools | HL2:DM Mapping</title>
+</head>
+<body>
+    <div id="navbar-horizontal">
+        <ul class="navbar-text">
+            <li>
+                <a href=index.html class="active">Index</a>
+            </li>
+            <li>
+                <a href="misc.html">Misc</a>
+            </li>
+            <li>
+                <a href="credits.html">Credits</a>
+            </li>
+            <li>
+                <a href="useful_links.html">Useful Stuff</a>
+            </li>
+        </ul>
+    </div>
+<h1>Mapping Tools</h1>
+<p>This obviously isn't a complete list of programs that could be used to make a map (VDC categories: <a href="https://developer.valvesoftware.com/wiki/Category:Official_Source_Tools">first party</a>/<a href="https://developer.valvesoftware.com/wiki/Category:Third_Party_Tools">third party</a>), so I've only listed the most common ones and their use cases here.</p>
+<hr>
+<div id="essential">
+    <h2>Essential Tools</h2>
+    <p>If you only want to make a map around stock assets, you will only need this for a solid mapping experience.</p>
+    <h3 style="color:violet;">Hammer++</h3>
+    <p>An unofficial extension of Hammer that adds some much-needed quality of life features that greatly improve the ease of mapping (<strong>lighting preview</strong> <em>especially</em>). There are some rare cases where you'll need to revert to the stock version of Hammer, but this is such an improvement over the vanilla version it's hard to imagine a world without it.</p>
+    <p><a href="https://ficool2.github.io/HammerPlusPlus-Website/download.html">Download the Source 2013 Multiplayer version of Hammer++ here</a></p>
+    <sub>About Tutorials: As H++'s GUI is mostly the same as stock Hammer, you should still be able to follow Hammer tutorials as far back as 2004!</sub>
+    <h3 style="color:skyblue;">GCFScape</h3>
+    <p>Basically 7-zip for the first Source Engine; it lets you open and extract common packed archive formats (<em>VPK</em> and <em>BSP</em>).</p>
+    <p><a href="https://nemstools.github.io/pages/GCFScape-Download.html">Download GCFScape here (website archive)</a></p>
+    <h3>CompilePal</h3>
+    <p>A GUI-based tool that allows you to easily change and save compile parameters, and to pack your maps' assets without much hassle (even the in the "custom" folder too!).</p>
+    <p>CompilePal is technically optional, but it's saved me so many headaching with packing the map I consider it the more beginner-friendly approach to packing maps over other tools.</p>
+    <p><a href="https://github.com/ruarai/CompilePal/releases/latest">Download CompilePal here</a></p>
+    <sub>If you're using Hammer++, you'll likely need this in order to work around <em>Advanced Compile Options</em> not working in Hammer++'s GUI</sub>
+    <hr>
+</div>
+<div id="recommended">
+    <h2>Recommended Tools</h2>
+    <p>Things that I wouldn't strictly consider necessary to make a great map, but can help create one in the process.</p>
+    <h3>VIDE</h3>
+    <p>A multi-tool for mapping; although honestly, it's primary use is to manually pack assets other tools won't pick up.</p>
+    <h3>BSPSource</h3>
+    <p>The tool used to decompiling finished maps. If you've ever wanted to examine how a map works, or wanted to make a variant of an existing map (remember to credit the OG authors too!), you'll need this to understand it.</p>
+    <p>Note that the results won't be perfect or better than the map's original source file, and you'll need to extract the textures to a folder inside custom in order to see them in Hammer++ (or just stick to 3D Solid view and hope you get your bearings anyway).</p>
+    <p><a href="https://github.com/ata4/bspsrc/releases/latest">Download BSPSource here</a></p>
+    <h3>Audacity</h3>
+    <p>Free audio editing software.</p>
+    <p><a href="https://www.audacityteam.org/download">Download Audacity Here</a></p>
+    <h3>Krita</h3>
+    <p>Likely the best free program out there to make high quality textures with (before you mention it, try making a circle in GIMP...).</p>
+    <p><a href="https://krita.org/en/download/krita-desktop/">Download Krita Here</a></p>
+    <h3>VTFEdit-Reloaded</h3>
+    <p>A modern fork of VTFEdit, which is used to import and export textures to and from the Source Engine.</p>
+    <p><a href="https://github.com/Sky-rym/VTFEdit-Reloaded/releases">Download VTFEdit-Reloaded Here</a></p>
+    <h3>Blender</h3>
+    <p>The best 3D modelling program out there. As for as Source mapping, you'll need to grab the <a href="http://steamreview.org/BlenderSourceTools/">Blender Source Tools</a> addon for full functionality between Blender and Source (outside of importing/exporting to DXF)</p>
+    <hr>
+</div>
+<div id="niche">
+    <h2>Niche Tools</h2>
+    <p>There are dozens of these things listed everywhere; so for simplicity's sake, I'm only going to mention only a handful of things that might interest intermediate and advanced mappers.</p>
+    <h3>Propper</h3>
+    <p>A CLI tool that essentially turns compiled brushes inside Hammer into a model, complete with collision data. It's useful for turning complex map details into a more performant rendering object.</p>
+    <p><a href="https://github.com/tuxxi/propper-2013/releases/">Download Propper (Source SDK 2013 Version) Here</a></p>
+    <h3>Slammin' Tools</h3>
+    <p>Slammin' Tools comes in two parts; Slammin' Hammer and the Slammin' Compiler.</p>
+    <p>While Slammin' Hammer isn't as notable as it's command-line counterpart, it does include some fixes, and serves as a GUI for the extended functionality of it's compiler.</p>
+    <p>Slammin' Compiler on the other hand, is a more advanced map compiler that is comparable to Valve's updated compiling tools for CS:GO. It can optimise maps better such as supporting grouping static props together, options for prebaking ambient occulsion (historically closer to dirtmaps), and supporting displacements using a power of 4.</p>
+    <p>It should be noted that the compiler's use isn't restricted to Slammin' Hammer, and can be used with any fork of Hammer providing you've got the right FGD loaded - albeit you'll be missing some previews and the editor might detect problems that aren't actually there in the compiled product.</p>
+    <hr>
+</div>
+<div id="legacy">
+    <h2>Legacy Tools</h2>
+    <p>These tools are generally not recommended over their counterparts listed above, but are worth a mention.</p>
+    <p3>PakRat</p3>
+    <p>An ancient Java-based map packing tool. Won't detect assets in the custom folder (putting modded assets into folders that isn't custom is usually bad practice).</p>
+    <p><a href="https://www.tophattwaffle.com/downloads/pakrat/">Download PakRat here</a></p>
+    <h3>VTFEdit</h3>
+    <p>[I believe] it has minor discolouring issue involving imported textures, but otherwise still works pretty well otherwise.</p>
+    <p><a href="https://www.tophattwaffle.com/downloads/vtfedit/">Download VTFEdit here</a></p>
+</div>
+</body>
+<footer>
+    <hr>
+    A <a href=hl2dm.community>hl2dm.community Discord</a> project</footer>
+</html>

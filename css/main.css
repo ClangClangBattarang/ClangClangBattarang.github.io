@@ -1,5 +1,6 @@
 * {
     font-family: sans-serif;
+    color: floralwhite;
 }
 
 body {
@@ -16,6 +17,10 @@ h2{
 
 p{
     color: floralwhite;
+}
+
+a{
+    color: lightblue;
 }
 
 footer{
@@ -86,8 +91,4 @@ footer{
 li a:hover:not(.active){
     color: white;
     background-color: royalblue;
-}
-
-.navbar-text a:visited{
-    /* color: lightgrey; */
 }
